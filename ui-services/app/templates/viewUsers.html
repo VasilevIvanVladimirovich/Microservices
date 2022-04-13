@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+{{super()}}
+{% for users in viewusers -%}
+   <p><b>Логин</b> {{users.login}} <b>Пароль</b> {{users.password}}</p>
+{% endfor -%}
+{% endblock %}

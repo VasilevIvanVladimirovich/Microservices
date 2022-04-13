@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+
+  ui-services:
+    build: ./ui-services
+    volumes:
+    - ./ui-services/:/app/
+    ports:
+    - 5000:5000
