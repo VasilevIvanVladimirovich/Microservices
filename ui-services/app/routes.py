@@ -12,8 +12,8 @@ menu = [{"name": "Главная", "url":"/ui-services/index"},
         {"name": "Товары", "url":"/ui-services/viewproduct"}]
 
     
-urlUsers = "http://127.0.0.1:5001/api/users"
-urlProducts = "http://127.0.0.1:5002/api/product"
+urlUsers = "http://user-services:5001/api/users"
+urlProducts = "http://product-services:5002/api/product"
 
 @app.route('/')
 @app.route('/ui-services/index')
